@@ -19,7 +19,7 @@
         }],
         "grammars": [{
             "language": "buzz",
-            "scopeName": "",
+            "scopeName": "source.buzz",
             "path": "./syntaxes/buzz.tmLanguage.json"
         }]
     },
