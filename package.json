@@ -2,6 +2,7 @@
     "name": "buzz",
     "displayName": "Buzz",
     "description": "Language support and syntax highlighting for the Buzz programming language",
+    "icon": "images/buzz.jpg",
     "version": "0.0.1",
     "engines": {
         "vscode": "^1.59.0"
@@ -21,5 +22,9 @@
             "scopeName": "",
             "path": "./syntaxes/buzz.tmLanguage.json"
         }]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/samarseneault/buzz-vscode-extension"
     }
 }
