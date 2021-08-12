@@ -8,7 +8,8 @@
         "vscode": "^1.59.0"
     },
     "categories": [
-        "Programming Languages"
+        "Programming Languages",
+        "Snippets"
     ],
     "contributes": {
         "languages": [{
@@ -21,7 +22,13 @@
             "language": "buzz",
             "scopeName": "source.buzz",
             "path": "./syntaxes/buzz.tmLanguage.json"
-        }]
+        }],
+        "snippets": [
+            {
+                "language": "buzz",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
     },
     "repository": {
         "type": "git",

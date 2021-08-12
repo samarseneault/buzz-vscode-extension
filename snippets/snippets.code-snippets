@@ -1,0 +1,59 @@
+{
+	// Place your buzz-vscode-extension workspace snippets here. Each snippet is defined under a snippet name and has a scope, prefix, body and 
+	// description. Add comma separated ids of the languages where the snippet is applicable in the scope field. If scope 
+	// is left empty or omitted, the snippet gets applied to all languages. The prefix is what is 
+	// used to trigger the snippet and the body will be expanded and inserted. Possible variables are: 
+	// $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. 
+	// Placeholders with the same ids are connected.
+
+	"Named function": {
+		"prefix": "fun",
+		"body": [
+		  "function ${1:function_name}($2) {",
+		  "\t${3: # Code}",
+		  "}"
+		],
+		"description": "Snippet to create a named function",
+    "scope": "buzz"
+	},
+  "Lambda function": {
+		"prefix": "lambda",
+		"body": [
+		  "var ${1:function_name} = function($2) {",
+		  "\t${3: # Code}",
+		  "}"
+		],
+		"description": "Snippet to create a lambda function",
+    "scope": "buzz"
+	},
+  "For loop": {
+      "prefix": "for",
+      "body": [
+        "for (${1:i} = 0, ${1:i} < ${2:count}, ${1:i} = ${1:i} + 1) {",
+        "\t${3:# Code}",
+        "}"
+      ],
+      "description": "Snippet to create a for loop",
+      "scope": "buzz"
+  },
+  "While loop": {
+      "prefix": "while",
+      "body": [
+        "while (${1:condition}) {",
+        "\t${2:# Code}",
+        "}"
+      ],
+      "description": "Snippet to create a while loop",
+      "scope": "buzz"
+  },
+  "Foreach loop": {
+      "prefix": "foreach",
+      "body": [
+        "foreach(${1:_table}, function(${2:key}, ${3:value}) {",
+        "\t{4:# Code}",
+        "})"
+      ],
+      "description": "Snippet to create a foreach loop",
+      "scope": "buzz"
+  }
+}
