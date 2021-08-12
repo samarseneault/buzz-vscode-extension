@@ -84,7 +84,11 @@
 			},
 			{
 				"name": "keyword.operator.logical.buzz",
-				"match": "[b(!=|==|<=|>=)\\b]"
+				"match": "\\b(!=|==|<=|>=)\\b"
+			},
+			{
+				"name": "keyword.operator.logical.buzz",
+				"match": "[<>]"
 			},
 			{
 				"name": "keyword.operator.assignment.buzz",
