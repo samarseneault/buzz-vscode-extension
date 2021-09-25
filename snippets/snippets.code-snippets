@@ -9,7 +9,8 @@
 	"Named function": {
 		"prefix": "fun",
 		"body": [
-		  "function ${1:function_name}($2) {",
+      "#\n# Function description\n# PARAM ${2:param}: Description\n# RETURN: nil\n#",
+		  "function ${1:function_name}(${2:param}) {",
 		  "\t${3: # Code}",
 		  "}"
 		],
@@ -59,9 +60,9 @@
   "Class": {
     "prefix": "class",
       "body": [
-        "#\n# ${1:MyClass}\n# Description",
+        "#\n# Class: ${1:MyClass}\n# Description: A purpose.",
         "${1:MyClass} = {\n",
-        "\t#\n\t# Constructor\n\t# PARAM ${2:param}: Description\n\t#",
+        "\t#\n\t# Constructor\n\t# PARAM ${2:param}: Description\n\t# RETURN: A new ${1:MyClass}\n\t#",
         "\t.new = function(${2:param}) {",
         "\t\t .${2:attribute} = ${2:param}",
         "\t}",
