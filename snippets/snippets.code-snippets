@@ -50,10 +50,24 @@
       "prefix": "foreach",
       "body": [
         "foreach(${1:_table}, function(${2:key}, ${3:value}) {",
-        "\t{4:# Code}",
+        "\t${4:# Code}",
         "})"
       ],
       "description": "Snippet to create a foreach loop",
+      "scope": "buzz"
+  },
+  "Class": {
+    "prefix": "class",
+      "body": [
+        "#\n# ${1:MyClass}\n# Description",
+        "${1:MyClass} = {\n",
+        "\t#\n\t# Constructor\n\t# PARAM ${2:param}: Description\n\t#",
+        "\t.new = function(${2:param}) {",
+        "\t\t .${2:attribute} = ${2:param}",
+        "\t}",
+        "}"
+      ],
+      "description": "Snippet to create a class",
       "scope": "buzz"
   }
 }
