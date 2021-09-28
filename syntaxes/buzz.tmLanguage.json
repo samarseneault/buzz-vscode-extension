@@ -162,7 +162,7 @@
 			"patterns": [
 			{
 				"name": "entity.name.class.buzz",
-				"match": "\\b([A-Z][a-z0-9_]+)+\\b"
+				"match": "\\b([A-Z]+[a-z0-9_]+)+\\b"
 			}
 			]
 		},
