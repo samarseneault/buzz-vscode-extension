@@ -11,7 +11,7 @@
 		"body": [
       "#\n# Function description\n# PARAM ${2:param}: Description\n# RETURN: nil\n#",
 		  "function ${1:function_name}(${2:param}) {",
-		  "\t${3: # Code}",
+		  "\t${3:# Code}",
 		  "}"
 		],
 		"description": "Snippet to create a named function",
@@ -21,7 +21,7 @@
 		"prefix": "lambda",
 		"body": [
 		  "var ${1:function_name} = function($2) {",
-		  "\t${3: # Code}",
+		  "\t${3:# Code}",
 		  "}"
 		],
 		"description": "Snippet to create a lambda function",
@@ -60,11 +60,13 @@
   "Class": {
     "prefix": "class",
       "body": [
-        "#\n# Class: ${1:MyClass}\n# Description: A purpose.",
+        "#\n# Class: ${1:MyClass}\n# Description: A purpose.\n#",
         "${1:MyClass} = {\n",
         "\t#\n\t# Constructor\n\t# PARAM ${2:param}: Description\n\t# RETURN: A new ${1:MyClass}\n\t#",
         "\t.new = function(${2:param}) {",
-        "\t\t .${2:attribute} = ${2:param}",
+        "\t\treturn {",
+        "\t\t\t.${2:attribute} = ${2:param}",
+        "\t\t}",
         "\t}",
         "}"
       ],
